@@ -1,0 +1,18 @@
+{
+  "name": "previewr-template",
+  "version": "0.0.1",
+  "description": "A template setup to run previewr as well as live reload.",
+  "main": "index.js",
+  "repository": "",
+  "author": "John Harman",
+  "license": "BSD",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.0",
+    "grunt-contrib-less": "~0.6.4",
+    "grunt-bg-shell": "~2.1.0"
+  }
+}
