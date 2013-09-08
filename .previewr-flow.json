@@ -8,6 +8,7 @@
 		"gallery": [
 			{"layout": "pages/index.html" },
 			{"load": "features/gallery/gallery.html"},
+			{"bind": "data/pictures.json"},
 			{"appendTo": ".main-content"}
 		],
 		"gallery/no-items": [
