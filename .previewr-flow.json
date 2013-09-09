@@ -13,9 +13,9 @@
 		],
 		"gallery/no-items": [
 			{"inherit": "gallery"},
+			{"empty": ".main-content article"},
 			{"load": "features/gallery/no-items.html"},
-			{"appendTo": ".items"},
-			{"empty": ".main-content ul"}
+			{"appendTo": "article"}
 		],
 		"gallery/paged-items": [
 			{"inherit": "gallery"},
@@ -23,18 +23,18 @@
 			{"bind": [{ "name": "john" }, { "name": "Stuart" }]},
 			{"appendTo": ".items"},
 			{"load": "features/pagination/standard-paging.html"},
-			{"appendTo": ".main-content"}
-		],
-		"gallery/pagination": [
-			{"inherit": "gallery/paged-items"},
+			{"appendTo": ".main-content"},
 			{"find": ".pagination li:first-child"},
-			{"addClass": "first-item"},
+			{"addClass": "active"},
 			{"endFind": 1}
 		],
-		"gallery/pagination/last-page": [
+		"gallery/paged-items/last-page": [
 			{"inherit": "gallery/paged-items"},
+			{"find": ".pagination li:first-child"},
+			{"removeClass": "active"},
+			{"endFind": 1},
 			{"find": ".pagination li:last-child"},
-			{"addClass": "last-item"},
+			{"addClass": "active"},
 			{"endFind": 1}
 		]
 	}
