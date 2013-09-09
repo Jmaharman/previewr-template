@@ -4,3 +4,7 @@ body {
 ul {
   padding: 50px;
 }
+.active {
+  color: blue;
+  font-weight: bold;
+}
